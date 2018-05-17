@@ -1,0 +1,230 @@
+#title {
+	font-family: 'Questrial', sans-serif;
+	color: #FFFFFF;
+	opacity: 0;
+	font-size: 48px;
+	animation-name: title;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	margin-top: 350px;
+	margin-left: 25px;
+	animation-fill-mode: forwards;
+}
+
+@keyframes title {
+	from {margin-left: -250px; margin-top: 350px; opacity: 0;}
+	to {margin-left: 25px; margin-top: 350px; opacity: 1;}
+}
+
+#underline {
+	background: #FFFFFF;
+	opacity: 0;
+	margin-top: -50px;
+	margin-left: 25px;
+	animation-name: underline;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes underline {
+	from {opacity: 0; margin-left: 250px; width: 1px; height: 2px;}
+	to {opacity: 1; margin-left: 26px; width: 250px; height: 2px;}
+}
+
+#subtitle {
+	font-family: 'Questrial', sans-serif;
+	color: #FFFFFF;
+	opacity: 0;
+	font-size: 18px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 25px;	
+	animation-name: subtitle;
+	animation-duration: 2s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes subtitle {
+	from {margin-left: 800px; font-size: 0px;}
+	to { margin-left: 26px; opacity: 1; font-size: 18px;}
+}
+
+#nav-div {
+	background-color:#191919;
+	opacity: .75;
+	height: 75px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+#logo-div {
+	background-image: url("../imgs/logo_M.png");
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 75px;
+	margin-top: 7.5px;
+	margin-left: 5px;
+}
+
+#button-div {
+	display: flex;
+	margin-top: -65px;
+  	align-items: center;
+  	justify-content: center;
+	z-index: 1;
+}
+
+.button {
+	border-radius: 4px;
+	background-color: #191919;
+	border: none;
+	color: #FFFFFF;
+	font-family: 'Questrial', sans-serif;
+	text-align: center;	
+	font-size: 16px;
+	padding: 20px;
+	width: 125px;
+	margin: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button:hover {
+	background-color: #FF6600;
+	opacity: 1;	
+} 
+
+.button	span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 15px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.call-out-button {
+	border-radius: 4px;
+	background-color: #191919;
+	border: none;
+	color: #FFFFFF;
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+	font-size: 16px;
+	padding: 20px;
+	width: 125px;
+	margin: 5px;
+	margin-top: 5px;
+	cursor: pointer;	
+}
+
+.call-out-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.call-out-button:hover {
+	background-color: #CC0000;	
+} 
+
+.call-out-button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.call-out-button:hover span {
+	padding-right: 15px;
+}
+
+.call-out-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+body {
+	font-family: 'Questrial', sans-serif;
+	background-image: url("../imgs/nebula_large.jpg");
+	background-position-x: 55%;
+	background-position-y: 15%;
+}
+
+section {
+	display: block;
+}
+
+#bio {
+	font-family: 'Questrial', sans-serif;
+	font-size: 24px;
+	color: #A9A9A9;
+	position: absolute;
+	text-align: center;
+	margin-left: 350px;
+	margin-right: 100px;
+	margin-top: 75px;
+	opacity: 0;
+	animation-name: bio;
+	animation-duration: 4s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes bio {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+#selfie {
+	background-image: url("imgs/selfie.png");
+	background-repeat: no-repeat; 
+	background-position: center;
+	height: 123px; 
+	width: 123px; 
+	margin-left: 800px;
+	margin-top: -250px;
+}
+	
+#footer-div {
+	background-color:#191919;
+	opacity: .75;
+	height: 55px;
+	position: fixed;
+	bottom: 0px;
+	left :0px;
+	right: 0px;
+	font-family: 'Questrial', sans-serif;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+
